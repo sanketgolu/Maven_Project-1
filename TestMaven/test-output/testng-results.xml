@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5141" started-at="2022-04-06T21:57:02 IST" finished-at="2022-04-06T21:57:07 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5141" started-at="2022-04-06T21:57:02 IST" finished-at="2022-04-06T21:57:07 IST">
+      <class name="com.abc.Orangehrm.LoginPageTest1">
+        <test-method status="PASS" signature="Browser_Initilisation()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Browser_Initilisation" is-config="true" duration-ms="13200" started-at="2022-04-06T21:56:48 IST" finished-at="2022-04-06T21:57:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Initilisation -->
+        <test-method status="PASS" signature="Report()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Report" is-config="true" duration-ms="307" started-at="2022-04-06T21:57:02 IST" finished-at="2022-04-06T21:57:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report -->
+        <test-method status="PASS" signature="ExcelConnect()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="ExcelConnect" is-config="true" duration-ms="1470" started-at="2022-04-06T21:57:02 IST" depends-on-methods="common_functionality.Reporter.Report" finished-at="2022-04-06T21:57:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelConnect -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="startTest" is-config="true" duration-ms="7" started-at="2022-04-06T21:57:03 IST" finished-at="2022-04-06T21:57:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="TC1()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="TC1" duration-ms="2795" started-at="2022-04-06T21:57:03 IST" description="Verify that user is unable to login successfully with invalid credential" finished-at="2022-04-06T21:57:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="EndTest" is-config="true" duration-ms="508" started-at="2022-04-06T21:57:06 IST" finished-at="2022-04-06T21:57:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="endTest" is-config="true" duration-ms="1" started-at="2022-04-06T21:57:07 IST" finished-at="2022-04-06T21:57:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="Broweser_close()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Broweser_close" is-config="true" duration-ms="1119" started-at="2022-04-06T21:57:07 IST" finished-at="2022-04-06T21:57:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Broweser_close -->
+      </class> <!-- com.abc.Orangehrm.LoginPageTest1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
