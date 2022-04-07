@@ -46,45 +46,45 @@ import orangehrm.LoginPage;
 			}
 		}
 		
-//		@Test(description="Verify that user is unable to login successfully with invalid Username and valid Password ")
-//		public void TC2() {
-//			test=report.startTest("Verify that user is unable to login successfully with invalid Username and valid Password");
-//			LoginPage loginpage=new LoginPage(driver);
-//			loginpage.Login("Admin123", "admin123");
-//			
-//			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
-//				test.log(LogStatus.PASS, "User is not able to login in system");
-//			}else {
-//				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
-//			}
-//		}
-//		
-//		
-//		@Test(description="Verify that user is unable to login successfully with valid Username and invalid Password")
-//		public void TC3() {
-//			test=report.startTest("Verify that user is unable to login successfully with valid Username and invalid Password");
-//			LoginPage loginpage=new LoginPage(driver);
-//			loginpage.Login("Admin", "admin12345");
-//			
-//			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
-//				test.log(LogStatus.PASS, "User is not able to login in system");
-//			}else {
-//				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
-//			}
-//		}
-//		@Test(description="Verify that user is able to login successfully with valid credential ")
-//		public void TC4()  {
-//			test=report.startTest("Verify that user is able to login successfully with valid credential");
-//			LoginPage loginpage=new LoginPage(driver);
-//			loginpage.Login("Admin", "admin123");
-//			
-//			Dashboard dashbordpage=new Dashboard(driver);
-//			if(dashbordpage.getDashboardLabel().isDisplayed()) {
-//				test.log(LogStatus.PASS,"User is able to login successfully");
-//			}else {
-//				test.log(LogStatus.FAIL,"User is not able to login successfully");
-//			}
-//		}
+		@Test(description="Verify that user is unable to login successfully with invalid Username and valid Password ")
+		public void TC2() {
+			test=report.startTest("Verify that user is unable to login successfully with invalid Username and valid Password");
+			LoginPage loginpage=new LoginPage(driver);
+			loginpage.Login("Admin123", "admin123");
+			
+			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
+				test.log(LogStatus.PASS, "User is not able to login in system");
+			}else {
+				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+			}
+		}
+		
+		
+		@Test(description="Verify that user is unable to login successfully with valid Username and invalid Password")
+		public void TC3() {
+			test=report.startTest("Verify that user is unable to login successfully with valid Username and invalid Password");
+			LoginPage loginpage=new LoginPage(driver);
+			loginpage.Login("Admin", "admin12345");
+		
+			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
+				test.log(LogStatus.PASS, "User is not able to login in system");
+			}else {
+				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+		}
+		}
+		@Test(description="Verify that user is able to login successfully with valid credential ")
+		public void TC4()  {
+			test=report.startTest("Verify that user is able to login successfully with valid credential");
+			LoginPage loginpage=new LoginPage(driver);
+			loginpage.Login("Admin", "admin123");
+			
+			Dashboard dashbordpage=new Dashboard(driver);
+			if(dashbordpage.getDashboardLabel().isDisplayed()) {
+				test.log(LogStatus.PASS,"User is able to login successfully");
+			}else {
+				test.log(LogStatus.FAIL,"User is not able to login successfully");
+			}
+		}
 		
 		
 		@AfterClass(alwaysRun=true)
