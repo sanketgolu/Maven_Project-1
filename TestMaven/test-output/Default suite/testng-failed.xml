@@ -3,16 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.abc.Orangehrm.Peronal_DetailsTest">
+      <class name="com.abc.Orangehrm.LoginPageTest1">
         <methods>
           <include name="Report"/>
-          <include name="TC1"/>
           <include name="Broweser_close"/>
           <include name="Browser_Initilisation"/>
+          <include name="TC3"/>
+          <include name="TC4"/>
           <include name="endTest"/>
+          <include name="TC1"/>
+          <include name="TC2"/>
           <include name="ExcelConnect"/>
+          <include name="EndTest"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.abc.Orangehrm.Peronal_DetailsTest -->
+      </class> <!-- com.abc.Orangehrm.LoginPageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

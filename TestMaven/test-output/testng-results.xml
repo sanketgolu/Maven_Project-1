@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13716" started-at="2022-04-14T00:07:48 IST" finished-at="2022-04-14T00:08:01 IST">
+  <suite name="Default suite" duration-ms="11395" started-at="2022-04-27T12:26:22 IST" finished-at="2022-04-27T12:26:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13716" started-at="2022-04-14T00:07:48 IST" finished-at="2022-04-14T00:08:01 IST">
-      <class name="com.abc.Orangehrm.Peronal_DetailsTest">
-        <test-method status="PASS" signature="Browser_Initilisation()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="Browser_Initilisation" is-config="true" duration-ms="10690" started-at="2022-04-14T00:07:37 IST" finished-at="2022-04-14T00:07:48 IST">
+    <test name="Default test" duration-ms="11395" started-at="2022-04-27T12:26:22 IST" finished-at="2022-04-27T12:26:33 IST">
+      <class name="com.abc.Orangehrm.LoginPageTest1">
+        <test-method status="PASS" signature="Browser_Initilisation()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Browser_Initilisation" is-config="true" duration-ms="15122" started-at="2022-04-27T12:26:07 IST" finished-at="2022-04-27T12:26:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browser_Initilisation -->
-        <test-method status="PASS" signature="Report()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="Report" is-config="true" duration-ms="335" started-at="2022-04-14T00:07:48 IST" finished-at="2022-04-14T00:07:48 IST">
+        <test-method status="PASS" signature="Report()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Report" is-config="true" duration-ms="193" started-at="2022-04-27T12:26:22 IST" finished-at="2022-04-27T12:26:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-        <test-method status="PASS" signature="ExcelConnect()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="ExcelConnect" is-config="true" duration-ms="1040" started-at="2022-04-14T00:07:48 IST" depends-on-methods="common_functionality.Reporter.Report" finished-at="2022-04-14T00:07:49 IST">
+        <test-method status="PASS" signature="ExcelConnect()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="ExcelConnect" is-config="true" duration-ms="1107" started-at="2022-04-27T12:26:22 IST" depends-on-methods="common_functionality.Reporter.Report" finished-at="2022-04-27T12:26:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExcelConnect -->
-        <test-method status="PASS" signature="TC1()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="TC1" duration-ms="11792" started-at="2022-04-14T00:07:49 IST" finished-at="2022-04-14T00:08:01 IST">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="startTest" is-config="true" duration-ms="4" started-at="2022-04-27T12:26:23 IST" finished-at="2022-04-27T12:26:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="TC1()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="TC1" duration-ms="2330" started-at="2022-04-27T12:26:23 IST" description="Verify that user is unable to login successfully with invalid credential" finished-at="2022-04-27T12:26:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1 -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="endTest" is-config="true" duration-ms="506" started-at="2022-04-14T00:08:01 IST" finished-at="2022-04-14T00:08:01 IST">
+        <test-method status="PASS" signature="TC2()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="TC2" duration-ms="2018" started-at="2022-04-27T12:26:26 IST" description="Verify that user is unable to login successfully with invalid Username and valid Password " finished-at="2022-04-27T12:26:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+        <test-method status="PASS" signature="TC3()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="TC3" duration-ms="2289" started-at="2022-04-27T12:26:28 IST" description="Verify that user is unable to login successfully with valid Username and invalid Password" finished-at="2022-04-27T12:26:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3 -->
+        <test-method status="PASS" signature="TC4()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="TC4" duration-ms="1663" started-at="2022-04-27T12:26:30 IST" description="Verify that user is able to login successfully with valid credential " finished-at="2022-04-27T12:26:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4 -->
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="EndTest" is-config="true" duration-ms="1630" started-at="2022-04-27T12:26:32 IST" finished-at="2022-04-27T12:26:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="endTest" is-config="true" duration-ms="98" started-at="2022-04-27T12:26:33 IST" finished-at="2022-04-27T12:26:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="Broweser_close()[pri:0, instance:com.abc.Orangehrm.Peronal_DetailsTest@544a2ea6]" name="Broweser_close" is-config="true" duration-ms="1013" started-at="2022-04-14T00:08:01 IST" finished-at="2022-04-14T00:08:02 IST">
+        <test-method status="PASS" signature="Broweser_close()[pri:0, instance:com.abc.Orangehrm.LoginPageTest1@42607a4f]" name="Broweser_close" is-config="true" duration-ms="925" started-at="2022-04-27T12:26:33 IST" finished-at="2022-04-27T12:26:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Broweser_close -->
-      </class> <!-- com.abc.Orangehrm.Peronal_DetailsTest -->
+      </class> <!-- com.abc.Orangehrm.LoginPageTest1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

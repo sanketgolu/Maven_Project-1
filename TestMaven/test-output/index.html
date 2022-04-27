@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1428095703\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-697579866\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.abc.Orangehrm.Peronal_DetailsTest" hash-for-method="TC1">TC1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.abc.Orangehrm.LoginPageTest1" hash-for-method="TC1">TC1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.abc.Orangehrm.LoginPageTest1" hash-for-method="TC2">TC2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.abc.Orangehrm.LoginPageTest1" hash-for-method="TC3">TC3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.abc.Orangehrm.LoginPageTest1" hash-for-method="TC4">TC4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,7 +137,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.abc.Orangehrm.Peronal_DetailsTest</span>
+              <span class="class-name">com.abc.Orangehrm.LoginPageTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,6 +145,35 @@
                   <a name="TC1">
                   </a> <!-- TC1 -->
                   <span class="method-name">TC1</span>
+                  <em>
+(Verify that user is unable to login successfully with invalid credential)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC2">
+                  </a> <!-- TC2 -->
+                  <span class="method-name">TC2</span>
+                  <em>
+(Verify that user is unable to login successfully with invalid Username and valid Password )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3">
+                  </a> <!-- TC3 -->
+                  <span class="method-name">TC3</span>
+                  <em>
+(Verify that user is unable to login successfully with valid Username and invalid Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC4">
+                  </a> <!-- TC4 -->
+                  <span class="method-name">TC4</span>
+                  <em>
+(Verify that user is able to login successfully with valid credential )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +181,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1428095703\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-697579866\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +190,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.abc.Orangehrm.Peronal_DetailsTest&quot;/&gt;
+      &lt;class name=&quot;com.abc.Orangehrm.LoginPageTest1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC1')
-data.setCell(0, 2, 'com.abc.Orangehrm.Peronal_DetailsTest')
-data.setCell(0, 3, 11792);
+data.setCell(0, 2, 'com.abc.Orangehrm.LoginPageTest1')
+data.setCell(0, 3, 2330);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC3')
+data.setCell(1, 2, 'com.abc.Orangehrm.LoginPageTest1')
+data.setCell(1, 3, 2289);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC2')
+data.setCell(2, 2, 'com.abc.Orangehrm.LoginPageTest1')
+data.setCell(2, 3, 2018);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC4')
+data.setCell(3, 2, 'com.abc.Orangehrm.LoginPageTest1')
+data.setCell(3, 3, 1663);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,30 +277,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.abc.Orangehrm.Peronal_DetailsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.abc.Orangehrm.LoginPageTest1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">Browser_Initilisation</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Report</span>
-                <span class="method-start">10694 ms</span>
+                <span class="method-start">15126 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">ExcelConnect</span>
-                <span class="method-start">11029 ms</span>
+                <span class="method-start">15319 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">16443 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC1</span>
-                <span class="method-start">12099 ms</span>
+                <span class="method-start">16465 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC2</span>
+                <span class="method-start">18812 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC3</span>
+                <span class="method-start">20832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC4</span>
+                <span class="method-start">23122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">EndTest</span>
+                <span class="method-start">24787 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">23901 ms</span>
+                <span class="method-start">26420 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">Broweser_close</span>
-                <span class="method-start">24426 ms</span>
+                <span class="method-start">26559 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
