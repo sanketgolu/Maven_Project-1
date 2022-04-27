@@ -33,7 +33,7 @@ public class Reporter extends BrowserLaunch {
 	//extentreport
 	//passtest
 	public static void PassTest(String teststep) {
-		test.log(LogStatus.PASS, teststep,test.addScreenCapture(Utility.captureScreen()));
+		test.log(LogStatus.PASS, teststep);
 	}
 	
 	public static void Failed_Test (String testStep ) {
