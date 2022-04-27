@@ -4,6 +4,11 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.abc.Orangehrm.LoginPageTest1"> <!-- If slash use then class end at that point --> 
+      <methods>
+      <exclude name="TC1">
+      
+      </exclude>
+      </methods>
       </class>
     </classes>
   </test> <!-- Test -->

@@ -5,12 +5,14 @@
     <classes>
       <class name="com.abc.Orangehrm.LoginPageTest1">
         <methods>
+          <include name="Report"/>
           <include name="Broweser_close"/>
           <include name="Browser_Initilisation"/>
           <include name="TC3"/>
           <include name="TC4"/>
-          <include name="TC1"/>
+          <include name="endTest"/>
           <include name="TC2"/>
+          <include name="ExcelConnect"/>
           <include name="EndTest"/>
           <include name="startTest"/>
         </methods>

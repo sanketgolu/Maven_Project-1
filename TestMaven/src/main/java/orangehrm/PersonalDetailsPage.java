@@ -3,18 +3,28 @@ package orangehrm;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
-public class MyInfo {
+public class PersonalDetailsPage {
 
 	WebDriver driver;
-	public MyInfo(WebDriver driver) {
-		this.driver =driver;
-	}
+
+	  public PersonalDetailsPage(WebDriver driver) {
+		  this.driver=driver;
+		  PageFactory.initElements(driver, this);
+	  }
 	//Edit Button method
+	  
 	public WebElement Edit_button () {
 		return driver.findElement(By.id("btnSave"));
 		
 	}
+	public WebElement My_Info () {
+		
+		return driver.findElement(By.xpath("//b[text()=\"My Info\"]"));
+	}
+	
+	
 	//FirstName Method
 	public WebElement First_Name () {
 		return driver.findElement(By.id("personal_txtEmpFirstName"));
@@ -84,9 +94,15 @@ public class MyInfo {
 	return driver.findElement(By.id("personal_chkSmokeFlag"));
 	}
 	
-	
-	
-	
-	
+	public void Personal_DetailButton (String First_Name,String Last_Name ) {
+		My_Info().click();
+		Edit_button().click();
+		First_Name().sendKeys(First_Name);
+		Last_Name().sendKeys(Last_Name);
+		Edit_button().click();
+		
+	    
+		
+	}
 	
 }

@@ -37,7 +37,7 @@ import orangehrm.LoginPage;
 			//loginpage.Login("Adimn12", "admin12345");
 			loginpage.Login(ReadExcel.getStringCellData("Tc2", "Username"), ReadExcel.getStringCellData("Tc2", "Password") );
 			
-			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
+			if(loginpage.getinvalidMessageLabel().size()>0) {
 				//test.log(LogStatus.PASS,"User is not able to login in system");
 				Reporter.PassTest("User is not able to login in system");
 			}else {
@@ -52,10 +52,12 @@ import orangehrm.LoginPage;
 			LoginPage loginpage=new LoginPage(driver);
 			loginpage.Login("Admin123", "admin123");
 			
-			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
-				test.log(LogStatus.PASS, "User is not able to login in system");
+			if(loginpage.getinvalidMessageLabel().size()>0) {
+				//test.log(LogStatus.PASS, "User is not able to login in system");
+				Reporter.PassTest("User is not able to login in system");
 			}else {
-				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+				//test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+				Reporter.Failed_Test("User is able to login with invalid credential");
 			}
 		}
 		
@@ -66,10 +68,12 @@ import orangehrm.LoginPage;
 			LoginPage loginpage=new LoginPage(driver);
 			loginpage.Login("Admin", "admin12345");
 		
-			if(loginpage.getinvalidMessageLabel().isDisplayed()) {
-				test.log(LogStatus.PASS, "User is not able to login in system");
+			if(loginpage.getinvalidMessageLabel().size()>0) {
+				//test.log(LogStatus.PASS, "User is not able to login in system");
+				Reporter.PassTest("User is not able to login in system");
 			}else {
-				test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+				//test.log(LogStatus.FAIL, "User is able to login with invalid credential");
+				Reporter.Failed_Test("User is able to login with invalid credential");
 		}
 		}
 		@Test(description="Verify that user is able to login successfully with valid credential ")
@@ -79,10 +83,13 @@ import orangehrm.LoginPage;
 			loginpage.Login("Admin", "admin123");
 			
 			Dashboard dashbordpage=new Dashboard(driver);
-			if(dashbordpage.getDashboardLabel().isDisplayed()) {
-				test.log(LogStatus.PASS,"User is able to login successfully");
+			if(dashbordpage.getDashboardLabel().size()>0) {
+				//test.log(LogStatus.PASS,"User is able to login successfully");
+				Reporter.PassTest("User is able to login successfully");
+				
 			}else {
-				test.log(LogStatus.FAIL,"User is not able to login successfully");
+				//test.log(LogStatus.FAIL,"User is not able to login successfully");
+				Reporter.Failed_Test("User is not able to login successfullyl");
 			}
 		}
 		

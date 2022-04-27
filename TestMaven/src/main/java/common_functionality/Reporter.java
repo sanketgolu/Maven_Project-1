@@ -33,12 +33,12 @@ public class Reporter extends BrowserLaunch {
 	//extentreport
 	//passtest
 	public static void PassTest(String teststep) {
-		test.log(LogStatus.PASS, teststep);
+		test.log(LogStatus.PASS, teststep,test.addScreenCapture(Utility.captureScreen()));
 	}
 	
 	public static void Failed_Test (String testStep ) {
 		
-		test.log(LogStatus.FAIL, testStep);
+		test.log(LogStatus.FAIL, testStep,test.addScreenCapture(Utility.captureScreen()));
 	}
 	
 	@AfterTest(alwaysRun=true)

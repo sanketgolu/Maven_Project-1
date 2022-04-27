@@ -22,7 +22,7 @@ public class ReadExcel extends Reporter {
 			e.printStackTrace();
 		} 
 		
-		sheet = workbook.getSheetAt(0);
+		sheet = workbook.getSheetAt(1);
 	}
 	
 	public static String getStringCellData(String TestCaseName,String ColumnName) {

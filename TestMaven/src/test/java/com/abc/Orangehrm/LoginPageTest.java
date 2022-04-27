@@ -1,5 +1,7 @@
 package com.abc.Orangehrm;
 
+import org.testng.annotations.Test;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -25,7 +27,7 @@ public class LoginPageTest extends BrowserLaunch{
 		
 	}
 	
-	
+	@Test
 	public void Login_Successfully(String username,String password) throws InterruptedException {
 		
 	    orangehrm.LoginPage loginpage = new orangehrm.LoginPage(driver);
@@ -34,7 +36,7 @@ public class LoginPageTest extends BrowserLaunch{
 	    loginpage.getLoginBtn().click();
 		Thread.sleep(1000);
 		Dashboard dashboardpage=new Dashboard(driver);
-		if(dashboardpage.getDashboardLabel().isDisplayed()) {
+		if(dashboardpage.getDashboardLabel().size()>0) {
 			 System.out.println("User is able to login successfully"); }
 		else {
 			 System.out.println("User is not able to login successfully"); 
@@ -49,8 +51,7 @@ public class LoginPageTest extends BrowserLaunch{
 		loginpage.getPasswordtxt().sendKeys(password);
 		loginpage.getLoginBtn().click();
 		Thread.sleep(1000);
-		if(loginpage.getinvalidMessageLabel().isDisplayed())
-		{
+		if(loginpage.getinvalidMessageLabel().size()>0) {
 			System.out.println("User is not able to login with invalid credential");
 		}
 		else {
